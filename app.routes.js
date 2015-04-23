@@ -54,22 +54,30 @@
 		'<p>Neste site abordaremos o processo de qualidade garantidos na etapa de Monitoramento & Controle.',
 
 	templateErro = 
-	'<h2>Erro</h2>' +
-	'<h3></h3>',
+		'<h2>Erro</h2>' +
+		'<h3></h3>',
 
 	templateEtapa = 
-	'<h2>Etapas</h2>' +
-	'<p>Monitoramento & Controle' +
-	'<ol>' +
-	'<li><a href="#">Definição</a></li>' +
-	'<li><a href="#">Análise</a></li>' +
-    '<li><a href="#">Validação</a></li>' +
-    '<li><a href="#">Implementação</a></li>' +
-    '<li><a href="#">Monitoramento</a>' +
-    '<ol><li><a href="#">Relatório Emergencial</a></li></ol></li>' +
-    '<li><a href="#">Relatório Periódico</a></li>' +
-    '</ol>',
+		'<h2>Etapas</h2>' +
+		'<p>Monitoramento & Controle' +
+		'<ol>' +
+		'<li><a href="#">Definição</a></li>' +
+		'<li><a href="#">Análise</a></li>' +
+		'<li><a href="#">Validação</a></li>' +
+		'<li><a href="#">Implementação</a></li>' +
+		'<li><a href="#">Monitoramento</a>' +
+		'<ol><li><a href="#">Relatório Emergencial</a></li></ol></li>' +
+		'<li><a href="#">Relatório Periódico</a></li>' +
+		'</ol>',
 
 	templateSobre = 
-	'<h2>Sobre</h2>';
+	'<h2>Sobre</h2>' +
+	'<p>Equipe:</p>' +
+	'<ul>' +
+	'<li>Dannilo Cassimiro</li>' +
+	'<li>Felipe Gonçalves</li>' +
+	'<li>Felipe Monobe</li>' +
+	'<li>Rafael Ferreira</li>' +
+	'<li>Renato Lara</li>' +
+	'</ul>';
 })();
