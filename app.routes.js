@@ -71,13 +71,13 @@
 		'</ol>',
 
 	templateSobre = 
-	'<h2>Sobre</h2>' +
-	'<p>Equipe:</p>' +
-	'<ul>' +
-	'<li>Dannilo Cassimiro</li>' +
-	'<li>Felipe Gonçalves</li>' +
-	'<li>Felipe Monobe</li>' +
-	'<li>Rafael Ferreira</li>' +
-	'<li>Renato Lara</li>' +
-	'</ul>';
+		'<h2>Sobre</h2>' +
+		'<p>Equipe:</p>' +
+		'<ul>' +
+		'<li>Dannilo Cassimiro</li>' +
+		'<li>Felipe Gonçalves</li>' +
+		'<li>Felipe Monobe</li>' +
+		'<li>Rafael Ferreira</li>' +
+		'<li>Renato Lara</li>' +
+		'</ul>';
 })();
