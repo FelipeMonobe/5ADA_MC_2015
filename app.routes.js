@@ -43,10 +43,8 @@
 	}
 
 	var templateInicio = 
-		'<h2>Sistema de Gestão</h2>' +
-		'<h4>Gestão de Projetos - 2015</h4>' +
-		'<h4>Análise e Desenvolvimento de Sistemas</h4>' +
-		'<h4>Monitoramento e Controle</h4>' +
+		'<h2>Análise e Desenvolvimento de Sistemas <small>Gestão de Projetos</small></h2>' +
+		'<p class="lead">Monitoramento e Controle</p>' +
 		'<p>Este é um guia passo-a-passo de como se utilizar o framework criado pelos alunos do 5º semestre do curso ' +
 		'de Análise e Desenvolvimento de Sistemas de 2015 da Faculdade de Tecnologia Bandeirantes.</p>' +
 		'<p>Na disciplina de Gestão de Projetos tivemos a missão de entender e por em prática todo o processo de gestão.</p>' +
@@ -54,22 +52,22 @@
 		'<p>Neste site abordaremos o processo de qualidade garantidos na etapa de Monitoramento & Controle.',
 
 	templateErro = 
-	'<h2>Erro</h2>' +
-	'<h3></h3>',
+		'<h2>Erro</h2>' +
+		'<h3></h3>',
 
 	templateEtapa = 
-	'<h2>Etapas</h2>' +
-	'<p>Monitoramento & Controle' +
-	'<ol>' +
-	'<li><a href="#">Definição</a></li>' +
-	'<li><a href="#">Análise</a></li>' +
-    '<li><a href="#">Validação</a></li>' +
-    '<li><a href="#">Implementação</a></li>' +
-    '<li><a href="#">Monitoramento</a>' +
-    '<ol><li><a href="#">Relatório Emergencial</a></li></ol></li>' +
-    '<li><a href="#">Relatório Periódico</a></li>' +
-    '</ol>',
+		'<h2>Etapas</h2>' +
+		'<p>Monitoramento & Controle' +
+		'<ol>' +
+		'<li><a href="#">Definição</a></li>' +
+		'<li><a href="#">Análise</a></li>' +
+    	'<li><a href="#">Validação</a></li>' +
+    	'<li><a href="#">Implementação</a></li>' +
+    	'<li><a href="#">Monitoramento</a>' +
+    	'<ol><li><a href="#">Relatório Emergencial</a></li></ol></li>' +
+    	'<li><a href="#">Relatório Periódico</a></li>' +
+    	'</ol>',
 
 	templateSobre = 
-	'<h2>Sobre</h2>';
+		'<h2>Sobre</h2>';
 })();
