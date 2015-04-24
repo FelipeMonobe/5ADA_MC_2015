@@ -61,6 +61,7 @@
 		'<ol>' +
 		'<li><a href="#">Definição</a></li>' +
 		'<li><a href="#">Análise</a></li>' +
+<<<<<<< HEAD
     	'<li><a href="#">Validação</a></li>' +
     	'<li><a href="#">Implementação</a></li>' +
     	'<li><a href="#">Monitoramento</a>' +
@@ -70,4 +71,23 @@
 
 	templateSobre = 
 		'<h2>Sobre</h2>';
+=======
+		'<li><a href="#">Validação</a></li>' +
+		'<li><a href="#">Implementação</a></li>' +
+		'<li><a href="#">Monitoramento</a>' +
+		'<ol><li><a href="#">Relatório Emergencial</a></li></ol></li>' +
+		'<li><a href="#">Relatório Periódico</a></li>' +
+		'</ol>',
+
+	templateSobre = 
+		'<h2>Sobre</h2>' +
+		'<p>Equipe:</p>' +
+		'<ul>' +
+		'<li>Dannilo Cassimiro</li>' +
+		'<li>Felipe Gonçalves</li>' +
+		'<li>Felipe Monobe</li>' +
+		'<li>Rafael Ferreira</li>' +
+		'<li>Renato Lara</li>' +
+		'</ul>';
+>>>>>>> 881d664563f4424d885d00ad77c034c5502ed354
 })();
