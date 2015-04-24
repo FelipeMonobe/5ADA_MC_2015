@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+
+<!-- No AngularJS, a diretiva "ng-app" (atributo) serve para indicar que os filhos daquele elemento usarão o AngularJS  -->
 <html lang="pt-BR" ng-app="app">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +11,12 @@
 	<title>GP 5ADA 2015 | M&C</title>
 </head>
 <body>
-	
-
 		<nav class="navbar navbar-default navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
 					<ul class="nav navbar-nav">
+					
+<!-- A navegação numa SPA é entre views e não páginas. As views ficam dentro da index (também chamada de shell), por usarmos ui-router para roteamento de links, usamos a diretiva "ui-sref" para referenciar os estados da aplicação, no caso da etapa passamos junto um parâmetro id com valor zerado -->					
 						<li><a ui-sref="inicio">Início</a></li>
 						<li><a ui-sref="etapa({ id: 0 })">Etapas</a></li>
 						<li><a ui-sref="sobre">Sobre</a></li>
@@ -22,6 +25,7 @@
 			</div>
 		</nav>
 	
+<!-- As nossas views são exibidas dentro da div onde temos a diretiva "ui-view", que funcionará como nosso container -->	
 		<div class="container" style="background-color: rgba(0,0,0,0.03); border-radius: 6px 6px" ui-view></div>
 
 	<script type="text/javascript" src="./bower_components/angular/angular.js"></script>

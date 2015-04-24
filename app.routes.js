@@ -1,21 +1,30 @@
 (function() {
 	'use strict';
 
+// criação de configurações para o módulo "app" que será definido na função "rotas"
 	angular
 	.module('app')
 	.config(rotas);
 
+// injeção de serviços usados pelo AngularJS, stateProvider para a navegação entre estados (views), urlRouterProvider para configurar fallback
 	rotas.$inject = ['$stateProvider', '$urlRouterProvider'];
 
 	function rotas($stateProvider, $urlRouterProvider) {
+		
+// definimos o nosso fallback para que caso o usuário tente acessar uma rota que não está configurada, enviá-lo para o estado /erro, configurado mais abaixo
 		$urlRouterProvider.otherwise('/erro');
 
+// chamada do provedor de estados e configuração dos estados
+// na configuração temos o nome do estado, seguido de um objeto com a url de acesso, o template HTML da view
 		$stateProvider
 		.state('erro', {
 			url: '/erro',
-			template: templateErro,
-			templateUrl: 'erro.html'
+			template: templateErro
 		})		
+// no estado "etapa" a url é composta do caminho e no final o parâmetro id que é definido por expressão regular, pra ser reconhecido apenas por numeros entre 0 e 6, 1 dígito apenas
+// qualquer outro número ou texto não será válido e o fallback será chamado, id 01 também é inválido
+// controller será onde manipularemos os dados de uma model ou as funções de eventos da view
+// controllerAs configura um codinome que será usado para acessar funções e variáveis do controller. VM: View Model
 		.state('etapa', {
 			url: '/etapa/{id:[0-6]{1}}',
 			template: templateEtapa,
@@ -42,6 +51,13 @@
 		})
 	}
 
+// templates das views
+// num caso normal, teríamos "templateUrl" no lugar de "template" nos estados/rotas. Este acessaría um arquivo HTML externo, e também
+// criaríamos os seus javascripts de controller em arquivos separados. No nosso caso, os templates são criados como string e os controllers junto com a rota.
+// isso acontece pois para acessar os arquivos HTML externos, a aplicação precisaria fazer uma chamada AJAX. Entretanto, ao se executar
+// a página localmente (abrindo o arquivo .html), os navegadores por padrão, bloqueiam a requisição por medidas de segurança.
+
+//estamos usando bootstrap com tema Lumen, antes de adicionar um elemento verifique se já existe uma classe do bootstrap para seguir padrão
 	var templateInicio = 
 		'<h2>Análise e Desenvolvimento de Sistemas <small>Gestão de Projetos</small></h2><hr>' +
 		'<p>Este é um guia passo-a-passo de como se utilizar o framework criado pelos alunos do 5º semestre do curso ' +
