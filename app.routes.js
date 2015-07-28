@@ -75,7 +75,7 @@
 		'<p>Monitoramento e Controle é uma etapa dentro do processo de gestão de projetos que tem como seu objetivo fornecer o entendimento do progresso do mesmo para que ações corretivas possam ser tomadas quando o projeto estiver desviando significantemente do seu plano estabelecido.</p>' +
 		'<p><b>Monitoramento:</b> compreender, capturar, analisar, reportar e comunicar o desempenho do projeto, referente aos processos e documentos envolvidos, cruzando as medidas reais de andamento das atividades com as medidas previamente estimadas no planejamento. Isso inclui a análise processual e documental das diversas etapas do projeto para aplicarmos nossa metodologia e métricas.</p>'+
 		'<p><b>Controle:</b> Tomar ações necessárias de correção para que as medidas reais se aproximem o máximo possível das medidas planejadas.</p>' +
-		'<p class="lead">Seguem abaixo as etapas do processo propostas pelo framework:</p>' +
+		'<p class="lead">Seguem abaixo as etapas do processo propostas pelo Monitoramento e Controle:</p>' +
     	'<div class="list-group">' +
   		'<a ui-sref="etapa({ id: 1 })" class="list-group-item">' +
     	'<h4 class="list-group-item-heading">1. Definição</h4>' +
